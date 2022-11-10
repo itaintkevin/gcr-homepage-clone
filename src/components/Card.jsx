@@ -3,19 +3,19 @@ import { BsThreeDotsVertical } from 'react-icons/bs'
 import { RiFolderUserLine } from 'react-icons/ri'
 import { IoMdFolderOpen } from'react-icons/io'
 import Sidebar from './Sidebar'
-import { useState } from 'react'
+// import { useState } from 'react'
 
 export default function Card() {
 
-    const [nav, setNav] = useState(false);
+    // const [nav, setNav] = useState(false);
 
-    const handleNav = () => {
-      setNav(!nav)
-    }
+    // const handleNav = () => {
+    //   setNav(!nav)
+    // }
 
   return (
     <>
-    <div onClick={handleNav} className='flex flex-wrap pl-7 pr-5'>
+    <div className='flex flex-wrap pl-7 pr-5'>
         { details.map((detail) => {
             return(
                 <div className='relative h-[294px] w-[300px] border border-1 border-gray-300 text-white mr-6 mb-4 rounded-lg hover:shadow-md'>
@@ -51,13 +51,13 @@ export default function Card() {
             );
         })}
     </div>
-    <div className={
+    {/* <div className={
           nav 
             ? "z-10" 
             : "hidden"
         }>
             <Sidebar />
-    </div>
+    </div> */}
   </>
   );
 }
